@@ -1,7 +1,7 @@
 USE [EMS_DB]
 GO
 
-/****** Object:  Table [dbo].[Attendance]    Script Date: 2/9/2026 10:44:07 AM ******/
+/****** Object:  Table [dbo].[Attendance]    Script Date: 2/9/2026 12:30:05 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -20,10 +20,4 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 GO
 
-ALTER TABLE [dbo].[Attendance]  WITH CHECK ADD  CONSTRAINT [FK_Attendance_Employees] FOREIGN KEY([EmployeeId])
-REFERENCES [dbo].[Employees] ([Id])
-GO
-
-ALTER TABLE [dbo].[Attendance] CHECK CONSTRAINT [FK_Attendance_Employees]
-GO
 
